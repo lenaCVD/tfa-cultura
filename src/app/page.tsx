@@ -4,12 +4,18 @@ import AttentionBar from './components/AttentionBar'
 import Nav from './components/Nav'
 import Section from './components/Section'
 import GlitchText from './components/GlitchText'
+import GlitchOverlay from './components/GlitchOverlay'
+import FakeAd from './components/FakeAd'
 
 export default function Home() {
   return (
     <>
       <AttentionBar />
+      <GlitchOverlay />
+
       <Nav />
+
+      <FakeAd position="sidebar" triggerOnScroll={false} />
 
       {/* HERO */}
       <section style={{
