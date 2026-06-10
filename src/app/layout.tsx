@@ -1,11 +1,16 @@
-import './globals.css'
+import type { Metadata } from 'next'
+import { ReactNode } from 'react'
 
-export const metadata = {
-  title: 'Internet en l\'era de la IA',
-  description: 'Una aproximació crítica a la transformació d\'Internet en l\'era de la intel·ligència artificial',
+export const metadata: Metadata = {
+  title: 'TFA Cultura Digital',
+  description: 'Slop, bots i bombolles: viure a Internet en l\'era de la IA',
 }
 
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}: {
+  children: ReactNode
+}) {
   return (
     <html lang="ca">
       <body>{children}</body>
